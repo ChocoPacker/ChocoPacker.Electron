@@ -1,0 +1,27 @@
+﻿<div class="select-msi-step">
+    <style>
+        .select-msi-step {
+            /*display: flex;
+            flex-flow: column;
+            justify-content: center;
+            position: absolute;*/
+            flex: 1;
+            border: 10px solid crimson;
+        }
+        
+        /*.select-msi-control {
+            align-self: center;
+        }*/
+    </style>
+    <div>
+        In order to proceed next you have to select installer.
+        <br />
+    </div>
+    <div data-ng-controller="SelectInstallerController as home" class="select-msi-control">
+        <div class="input-group">
+            <span class="input-group-label">Installer Path</span>
+            <input class="input-group-field" data-ng-model="home.installerPath" type="text">
+            <a class="input-group-button button" data-ng-click="home.openSelectInstallerDialog()">Browse</a>
+        </div>
+    </div>
+</div>

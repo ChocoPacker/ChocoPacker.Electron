@@ -1,0 +1,60 @@
+﻿body {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    background-color: whitesmoke;
+}
+
+/* Wizard sections */
+.wizard-header {
+    background-color: palegoldenrod;
+}
+
+.wizard-container {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+.wizard-section {
+    padding: 10px;
+}
+
+.wizard-footer {
+    height: 10vh;
+    min-height: 65px;
+    background-color: palegoldenrod;
+}
+
+.wizard-content {
+    flex: 2;
+}
+
+.wizard-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.step-content {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+/* end of wizard sections */
+
+.wizard-button {
+    margin: 5px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    width: 20vh;
+    min-width: 120px;
+}
+
+input:disabled {
+	cursor: default;
+}
+
+body:hover {
+   cursor: default;
+}

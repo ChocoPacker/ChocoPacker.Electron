@@ -1,0 +1,13 @@
+{
+  "name": "chocopacker.ui",
+  "version": "0.0.0",
+  "description": "ChocoPacker.UI",
+  "main": "main.js",
+  "author": {
+    "name": "Nitridan",
+    "email": ""
+  },
+  "dependencies": {
+	"angular": "^1.5.5"
+  }
+}
