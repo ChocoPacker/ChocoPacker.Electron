@@ -1,31 +1,27 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="ChocoPacker">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>ChocoPacker</title>
-    <link rel="stylesheet" href="css/foundation.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <title>ChocoPacker</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
-<body>
-    <div class="wizard-container">
-        <div class="wizard-header">
-            <h1>ChocoPacker</h1>                
-        </div>
-        <div class="wizard-section wizard-content" 
-            data-ng-include="'selectInstaller/selectInstallerTemplate.html'">
-        </div>
-        <div class="wizard-section wizard-footer">
-            <!-- TODO: Move to separate file -->
-            <button class="wizard-button button secondary">Back</button>
-            <button class="wizard-button button">Next</button>
-            <button class="wizard-button button success">Finish</button>
-            <button class="wizard-button button alert">Exit</button>
-        </div>         
-    </div>
-    
-    <script>jQuery = require('./js/vendor/jquery.js');$ = jQuery;</script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script src="app.js"></script>
+<body class="app">
+<header class="app-header">
+  <h1 class="logo">ChocoPacker</h1>
+</header>
+<main class="wizard" data-ng-include="'selectInstaller/selectInstallerTemplate.html'"></main>
+<footer class="app-footer">
+  <!-- TODO: Move to separate file -->
+  <button class="button  button--wizard  button--back">Back</button>
+  <button class="button  button--wizard  button--next">Next</button>
+  <button class="button  button--wizard  button--finish">Finish</button>
+  <button class="button  button--wizard  button--exit">Exit</button>
+</footer>
+
+<script>jQuery = require('./js/vendor/jquery.js');$ = jQuery;</script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
