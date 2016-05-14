@@ -43,6 +43,26 @@
   overflow-X: auto;
 }
 
+.wizard ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 2%;
+  min-height: 20px;
+  background-color: #2fffb8;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .app-footer {
   display: -webkit-box;
   display: -webkit-flex;
