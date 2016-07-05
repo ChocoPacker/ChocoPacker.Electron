@@ -11,8 +11,8 @@ export class DialogService implements IDialogService {
     private dialog: any;
 
     constructor() {
-        const remote = require('remote');
-        this.dialog = remote.require('dialog');
+        const {dialog} = require('electron').remote;
+        this.dialog = dialog;
     }
 
     showOpenFileDialog(fileTypes: IFileType[]): Promise<string> {

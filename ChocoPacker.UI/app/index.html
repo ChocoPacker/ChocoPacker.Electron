@@ -1,77 +1,24 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="ChocoPacker">
 <head>
   <meta charset="UTF-8">
   <title>ChocoPacker</title>
+  <link rel="stylesheet" href="css/foundation.min.css">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body class="app">
 <header class="app-header">
-  <h1 class="logo">ChocoPacker</h1>
+  <h1 class="logo">ChocoPacker</h1> 
 </header>
 <main class="wizard" data-ng-include="'selectInstaller/selectInstallerTemplate.html'">
-  <ul>
-    <li class="feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-    <li class="feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
-      cursus ante dapibus diam. Sed nisi.
-    </li>
-    <li class="feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
-      cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-      mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
-      taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
-      Sed dignissim lacinia nunc. Curabitur tortor.
-    </li>
-    <li class="feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
-      cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-      mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
-      taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
-      Sed dignissim lacinia nunc. Curabitur tortor.
-    </li>
-    <li class="feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
-      cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-      mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
-      taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
-      Sed dignissim lacinia nunc. Curabitur tortor.
-    </li>
-    <li class="feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
-      cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-      mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
-      taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
-      Sed dignissim lacinia nunc. Curabitur tortor.
-    </li>
-    <li class="feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
-      cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-      mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
-      taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
-      Sed dignissim lacinia nunc. Curabitur tortor.
-    </li>
-    <li class="feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
-      cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-      mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
-      taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
-      Sed dignissim lacinia nunc. Curabitur tortor.
-    </li>
-    <li class="feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
-      cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-      mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
-      taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
-      Sed dignissim lacinia nunc. Curabitur tortor.
-    </li>
-    <li class="feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
-      cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-      mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
-      taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
-      Sed dignissim lacinia nunc. Curabitur tortor.
-    </li>
-  </ul>
 </main>
 <footer class="app-footer">
   <!-- TODO: Move to separate file -->
-  <button class="button  button--wizard  button--back">Back</button>
-  <button class="button  button--wizard  button--next">Next</button>
-  <button class="button  button--wizard  button--finish">Finish</button>
-  <button class="button  button--wizard  button--exit">Exit</button>
+    <button class="button button--wizard button--back">Back</button>
+    <button class="button button--wizard button--next">Next</button>
+    <button class="button button--wizard button--finish">Finish</button>
+    <button class="button button--wizard button--exit">Exit</button>
 </footer>
 
 <script>jQuery = require('./js/vendor/jquery.js');$ = jQuery;</script>
